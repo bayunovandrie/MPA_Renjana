@@ -27,4 +27,4 @@ $routes->get('/renjana-buana-contact', 'Contact::index');
 $routes->get('/renjana-buana-merchandise', 'Merchandise::index');
 
 // purchase 
-$routes->get("purchase-now/(:num)", "Purchase::detail/$1");
+$routes->get("purchase-now/(:num)", "Merchandise::detail/$1");
