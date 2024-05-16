@@ -22,3 +22,9 @@ $routes->get('/renjana-buana-blog', 'Blog::index');
 
 // contact
 $routes->get('/renjana-buana-contact', 'Contact::index');
+
+// merchandise
+$routes->get('/renjana-buana-merchandise', 'Merchandise::index');
+
+// purchase 
+$routes->get("purchase-now/(:num)", "Purchase::detail/$1");

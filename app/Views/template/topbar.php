@@ -10,19 +10,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="<?= base_url('home') ?>">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="<?= base_url('renjana-buana-about') ?>">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">Kegiatan</a>
+                        <a class="nav-link" href="<?= base_url('renjana-buana-kegiatan') ?>">Kegiatan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="blog.html">Blog</a>
+                        <a class="nav-link " href="<?= base_url('renjana-buana-blog') ?>">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="contact.html">Contact</a>
+                        <a class="nav-link " href="<?= base_url('renjana-buana-contact') ?>">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -37,6 +37,7 @@
                 <li><a href="<?= base_url('renjana-buana-kegiatan') ?>">Kegiatan</a></li>
                 <li><a href="<?= base_url('renjana-buana-blog') ?>">Blog</a></li>
                 <li><a href="<?= base_url('renjana-buana-contact') ?>">Contact us</a></li>
+                <li><a href="<?= base_url('renjana-buana-merchandise') ?>">Merchandise</a></li>
             </ul>
         </div>
     </div>
