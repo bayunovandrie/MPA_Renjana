@@ -21,8 +21,8 @@
                             <p class="card-text"><?= $value['desc'] ?></p>
                             <p class="card-text"><?= rupiah($value['price']) ?></p>
                             <div class="text-center">
-                                <a href="<?= base_url('purchase-now/') . $value['id'] ?>"
-                                    class="btn btn-primary">Purchase Now</a>
+                                <a href="<?= base_url('purchase-now/') . $value['id'] ?>" class="btn btn-primary">See
+                                    Detail</a>
                             </div>
                         </div>
                     </div>

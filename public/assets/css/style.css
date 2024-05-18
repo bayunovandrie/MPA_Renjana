@@ -417,6 +417,54 @@ button {
   margin: 0px;
 }
 
+.services_section_3 .col_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.services_section_3 .kotak {
+  width: 20rem;
+  height: 25rem;
+  /* background-color: black; */
+  border-radius: 10px;
+  box-shadow: -3px 3px 8px rgb(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.services_section_3 .kotak img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.services_section_3 .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: -3px 3px 8px rgb(0, 0, 0, 0.5);
+}
+.services_section_3 .col_detail {
+  margin-top: 90px;
+}
+.services_section_3 .col_detail h3 {
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.services_section_3 .col_detail .btn_detail {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.services_section_3 .col_detail .row_button {
+  margin-top: 5rem;
+}
+
 .services_section_2 {
   width: 100%;
   float: left;

@@ -25,6 +25,7 @@ class Merchandise extends BaseController
     public function detail($id)
     {
         $data['merchandise'] = $this->merchModel->where('id', $id)->first();
+        
 
         return view('main/merchandise/page_detail', $data);
     }

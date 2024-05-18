@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/owl.theme.default.min.css') ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
         media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css" />
 </head>
 
 <body>
@@ -59,6 +60,23 @@
         <script src=<?= base_url('assets/js/owl.carousel.js') ?>></script>
         <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js">
         </script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script>
+        function showAlert() {
+            // Alert with image
+            Swal.fire({
+                title: "Panduan Size",
+                text: null,
+                imageUrl: "<?= base_url('assets/images/paduan_size.png') ?>", // URL gambar yang ingin ditampilkan
+                imageWidth: 800, // Lebar gambar dalam px
+                imageHeight: 400, // Tinggi gambar dalam px
+                imageAlt: "", // Deskripsi gambar (opsional)
+                confirmButtonText: "Close",
+            });
+        }
+        </script>
 </body>
+
+
 
 </html>
