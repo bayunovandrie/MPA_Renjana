@@ -471,6 +471,11 @@ button {
   margin-top: 90px;
 }
 
+.services_section_2 .card {
+  border-radius: 10px;
+  box-shadow: -3px 3px 8px rgb(0, 0, 0, 0.5);
+}
+
 .services_img {
   width: 100%;
   float: left;

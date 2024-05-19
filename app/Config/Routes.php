@@ -28,3 +28,7 @@ $routes->get('/renjana-buana-merchandise', 'Merchandise::index');
 
 // purchase 
 $routes->get("purchase-now/(:num)", "Merchandise::detail/$1");
+$routes->post('/order', 'Merchandise::order');
+
+// konfirmasi
+$routes->get("/konfirmasi_pembelian/(:num)", 'Merchandise::konfirmasi/$1');

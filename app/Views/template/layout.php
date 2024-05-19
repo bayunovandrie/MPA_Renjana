@@ -75,6 +75,16 @@
             });
         }
         </script>
+
+        <script>
+        $(document).ready(function() {
+            $('#modal_form_beli').on('show.bs.modal', function(event) {
+                var button = $(event.relatedTarget);
+                var myDataValue = button.data('my');
+                $('#myDataInput').val(myDataValue);
+            });
+        });
+        </script>
 </body>
 
 
