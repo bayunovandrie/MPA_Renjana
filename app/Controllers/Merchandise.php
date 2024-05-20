@@ -57,8 +57,7 @@ class Merchandise extends BaseController
 
     public function konfirmasi($trans_number)
     {
-        
-       $data['trans'] = $this->transaction->where('transaction_number', $trans_number)->first();
+       $data['trans']  = $this->transaction->select('merchandise.name, merchandise.img ,  transaction.*') ->join('merchandise', 'transaction.merch_id = merchandise.id', 'left')->where('transaction_number', $trans_number)->first();
         return view('main/merchandise/page_konfirmasi', $data);
     }
 

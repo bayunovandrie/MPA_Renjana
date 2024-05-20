@@ -34,6 +34,26 @@
                     <p class="services_text">No Hp Penerima: <strong><?= $trans['nohp_penerima'] ?></strong></p>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-md-3 col-3">
+                    <h3>Detail Product: </h3>
+                </div>
+                <div class="col-md-9 col-9">
+                    <img src="<?= image_url() . $trans['img'] ?>" alt="">
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Silahkan Menghubungi Admin Untuk Konfirmasi Pesanan anda !!!</h3>
+                </div>
+                <div class="col-md-12">
+                    <a href="#" onclick="redirectToWhatsApp()" target="_blank" class="btn btn-sm btn-primary">Hubungi
+                        Admin</a>
+                </div>
+
+            </div>
         </div>
     </div>
 </div>

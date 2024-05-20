@@ -85,6 +85,21 @@
             });
         });
         </script>
+
+        <script>
+        function redirectToWhatsApp() {
+            var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            var phoneNumber = '+6285782073799'; // Ganti dengan nomor telepon yang sesuai
+
+            if (isMobile) {
+                // Perangkat seluler, arahkan ke aplikasi WhatsApp jika tersedia
+                window.location.href = 'whatsapp://send?phone=' + phoneNumber;
+            } else {
+                // Perangkat desktop, arahkan ke WhatsApp Web
+                window.location.href = 'https://web.whatsapp.com/send?phone=' + phoneNumber;
+            }
+        }
+        </script>
 </body>
 
 

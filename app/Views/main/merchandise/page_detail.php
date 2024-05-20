@@ -14,7 +14,7 @@
             <div class="row">
                 <div class="col-md-5 col-12 col_img">
                     <div class="kotak">
-                        <img src="<?= base_url('assets/images/') . $merchandise['img']  ?>" alt="">
+                        <img src="<?= image_url() . $merchandise['img']  ?>" alt="">
                     </div>
                 </div>
                 <div class="col-md-1"></div>
