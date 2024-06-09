@@ -17,6 +17,8 @@
     <!-- bootstrap css -->
     <link rel="website icon" type="png" href="<?= base_url('assets/images/logorb.png') ?>">
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/bootstrap.min.css') ?>">
+    <!-- datatables -->
+    <link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/datatables.min.css') ?>">
     <!-- style css -->
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/style.css') ?>">
     <!-- Responsive-->
@@ -50,6 +52,7 @@
         <!-- Javascript files-->
         <script src=<?= base_url('assets/js/jquery.min.js') ?>></script>
         <script src=<?= base_url('assets/js/popper.min.js') ?>></script>
+        <script src=<?= base_url('assets/js/datatables.min.js') ?>></script>
         <script src=<?= base_url('assets/js/bootstrap.bundle.min.js') ?>></script>
         <script src=<?= base_url('assets/js/jquery-3.0.0.min.js') ?>></script>
         <script src=<?= base_url('assets/js/plugin.js') ?>></script>
@@ -99,6 +102,14 @@
                 window.location.href = 'https://web.whatsapp.com/send?phone=' + phoneNumber;
             }
         }
+        </script>
+
+        <script>
+        $(document).ready(function() {
+            $('#datatables').DataTable({
+                "lengthChange": false
+            });
+        });
         </script>
 </body>
 

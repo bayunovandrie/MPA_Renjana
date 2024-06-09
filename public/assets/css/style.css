@@ -159,6 +159,14 @@ img {
   height: auto;
 }
 
+.img_anggota {
+  border-radius: 50%;
+}
+
+.table_anggota tbody tr td {
+  vertical-align: middle;
+}
+
 :focus {
   outline: 0;
 }
