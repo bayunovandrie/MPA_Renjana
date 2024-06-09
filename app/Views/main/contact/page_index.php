@@ -16,15 +16,19 @@
                 </tr>
             </thead>
             <tbody>
+                <?php
+                $no = 1;
+                 foreach($anggota as $val) : ?>
+
                 <tr>
-                    <td scope="row" class="text-center">1</td>
+                    <td scope="row" class="text-center"><?= $no++; ?></td>
                     <td class="text-center">
                         <img class="img_anggota" src="<?= base_url('assets/images/user.jfif') ?>" alt="">
                     </td>
-                    <td>Bayu Novandrie</td>
-                    <td>Pamulang Barat</td>
+                    <td><?= $val['user_name'] ?></td>
+                    <td><?= $val['user_alamat'] ?></td>
                 </tr>
-
+                <?php endforeach; ?>
             </tbody>
         </table>
     </div>

@@ -22,8 +22,12 @@
                         <a class="nav-link " href="<?= base_url('renjana-buana-blog') ?>">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="<?= base_url('renjana-buana-contact') ?>">Contact</a>
+                        <a class="nav-link " href="<?= base_url('renjana-buana-anggota') ?>">Anggota</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="<?= base_url('renjana-buana-merchandise') ?>">Merchandise</a>
+                    </li>
+
                 </ul>
             </div>
         </nav>
@@ -36,7 +40,7 @@
                 <li><a href="<?= base_url('renjana-buana-about') ?>">About</a></li>
                 <li><a href="<?= base_url('renjana-buana-kegiatan') ?>">Kegiatan</a></li>
                 <li><a href="<?= base_url('renjana-buana-blog') ?>">Blog</a></li>
-                <li><a href="<?= base_url('renjana-buana-contact') ?>">Contact us</a></li>
+                <li><a href="<?= base_url('renjana-buana-anggota') ?>">Anggota</a></li>
                 <li><a href="<?= base_url('renjana-buana-merchandise') ?>">Merchandise</a></li>
             </ul>
         </div>

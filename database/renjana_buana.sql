@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 22 Bulan Mei 2024 pada 23.12
+-- Waktu pembuatan: 09 Jun 2024 pada 16.55
 -- Versi server: 10.4.27-MariaDB
 -- Versi PHP: 7.4.33
 
@@ -20,6 +20,28 @@ SET time_zone = "+00:00";
 --
 -- Database: `renjana_buana`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `anggota`
+--
+
+CREATE TABLE `anggota` (
+  `user_id` int(11) NOT NULL,
+  `user_name` varchar(255) NOT NULL,
+  `user_alamat` varchar(255) NOT NULL,
+  `user_img` varchar(255) NOT NULL,
+  `created_at` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `anggota`
+--
+
+INSERT INTO `anggota` (`user_id`, `user_name`, `user_alamat`, `user_img`, `created_at`) VALUES
+(1, 'Bayu Novandrie Saputra', 'Pamulang Barat', 'bayu.jpeg', '2024-06-09 16:47:11'),
+(2, 'Rio Ahmad Susilo', 'Bekasi', 'rio.jpeg', '2024-06-09 16:47:11');
 
 -- --------------------------------------------------------
 
@@ -79,6 +101,12 @@ INSERT INTO `transaction` (`transaction_id`, `transaction_number`, `merch_id`, `
 --
 
 --
+-- Indeks untuk tabel `anggota`
+--
+ALTER TABLE `anggota`
+  ADD PRIMARY KEY (`user_id`);
+
+--
 -- Indeks untuk tabel `merchandise`
 --
 ALTER TABLE `merchandise`
@@ -93,6 +121,12 @@ ALTER TABLE `transaction`
 --
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
+
+--
+-- AUTO_INCREMENT untuk tabel `anggota`
+--
+ALTER TABLE `anggota`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `merchandise`

@@ -21,7 +21,7 @@ $routes->get('/renjana-buana-kegiatan', 'Kegiatan::index');
 $routes->get('/renjana-buana-blog', 'Blog::index');
 
 // contact
-$routes->get('/renjana-buana-contact', 'Contact::index');
+$routes->get('/renjana-buana-anggota', 'Contact::index');
 
 // merchandise
 $routes->get('/renjana-buana-merchandise', 'Merchandise::index');
@@ -32,3 +32,6 @@ $routes->post('/order', 'Merchandise::order');
 
 // konfirmasi
 $routes->get("/konfirmasi_pembelian/(:num)", 'Merchandise::konfirmasi/$1');
+
+// anggota
+$routes->get("/renjana-buana-anggota", 'Anggota::index');
